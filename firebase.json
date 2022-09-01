@@ -3,20 +3,10 @@
     "rules": "database.rules.json"
   },
   "hosting": {
-    "public": "src",
+    "public": "y",
     "ignore": [
       "firebase.json",
-      ".firebaserc",
-      ".vscode",
-      ".git",
-      ".gitignore",
-      ".editorconfig",
-      "src/**/.*",
-      "database.rules.json",
-      "package.json",
-      "README.md",
-      "tsconfig.json",
-      "webpack.config.js",
+      "**/.*",
       "**/node_modules/**"
     ],
     "rewrites": [
