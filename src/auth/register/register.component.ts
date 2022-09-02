@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-register',
@@ -7,6 +8,9 @@ import { Component } from '@angular/core';
 })
 export class RegisterComponent {
 
-  constructor() {
+  constructor() { }
+
+  onRegister(event: FormGroup) {
+
   }
 }

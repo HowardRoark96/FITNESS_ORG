@@ -1,1 +1,8 @@
-<div>register</div>
+<app-auth-form
+  (submitted)="onRegister($event)">
+  <h1>Register</h1>
+
+  <button type="submit">Create account</button>
+
+  <a routerLink="/auth/login">Already have an account?</a>
+</app-auth-form>
