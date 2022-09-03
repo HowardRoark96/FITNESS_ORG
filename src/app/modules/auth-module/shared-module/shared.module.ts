@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthFormComponent } from './components/auth-form/auth-form.component';
 import { AuthService } from './services/auth.service';
+import { AuthGuard } from './guards/auth.guard';
 
 @NgModule({
   imports: [
@@ -12,6 +13,9 @@ import { AuthService } from './services/auth.service';
   ],
   declarations: [
     AuthFormComponent
+  ],
+  providers: [
+    AuthGuard
   ],
   exports: [
     AuthFormComponent
