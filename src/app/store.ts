@@ -1,5 +1,5 @@
 import { BehaviorSubject, distinctUntilChanged, map, Observable } from 'rxjs';
-import { User } from './auth/shared/services/auth.service';
+import { User } from './modules/auth-module/shared-module/services/auth.service';
 
 export interface State {
   user: User | null,

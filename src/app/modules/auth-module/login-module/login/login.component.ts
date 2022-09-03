@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-import { AuthService } from '../shared/services/auth.service';
+import { AuthService } from '../../shared-module/services/auth.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-register',
-  templateUrl: 'register.component.html'
+  selector: 'app-login-module',
+  templateUrl: 'login.component.html'
 })
-export class RegisterComponent {
+export class LoginComponent {
   error: string = '';
 
   constructor(
@@ -15,11 +15,11 @@ export class RegisterComponent {
     private router: Router
   ) { }
 
-  async onRegister(event: FormGroup) {
+  async onLogin(event: FormGroup) {
     const {email, password} = event.value;
 
     try {
-      await this.authService.createUser(email, password);
+      await this.authService.loginUser(email, password);
       this.router.navigate(['/']);
     } catch (error) {
       // @ts-ignore

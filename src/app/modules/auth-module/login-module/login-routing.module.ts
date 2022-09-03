@@ -1,11 +1,11 @@
-import { RouterModule, Routes } from '@angular/router';
-import { MealsComponent } from './meals.component';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: MealsComponent
+    component: LoginComponent
   }
 ];
 
@@ -17,4 +17,4 @@ const routes: Routes = [
     RouterModule
   ]
 })
-export class MealsRoutingModule {}
+export class LoginRoutingModule { }

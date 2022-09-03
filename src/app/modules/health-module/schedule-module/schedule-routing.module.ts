@@ -1,11 +1,11 @@
 import { RouterModule, Routes } from '@angular/router';
-import { WorkoutsComponent } from './workouts.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 import { NgModule } from '@angular/core';
 
 const routes: Routes = [
   {
     path: '',
-    component: WorkoutsComponent
+    component: ScheduleComponent
   }
 ];
 
@@ -17,4 +17,4 @@ const routes: Routes = [
     RouterModule
   ]
 })
-export class WorkoutsRoutingModule {}
+export class ScheduleRoutingModule {}

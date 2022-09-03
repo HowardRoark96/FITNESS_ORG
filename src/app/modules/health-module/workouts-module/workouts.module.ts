@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
-import { MealsComponent } from './meals.component';
+import { WorkoutsComponent } from './workouts/workouts.component';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
-import { MealsRoutingModule } from './meals-routing.module';
+import { WorkoutsRoutingModule } from './workouts-routing.module';
 
 @NgModule({
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    MealsRoutingModule
+    WorkoutsRoutingModule
   ],
   declarations: [
-    MealsComponent
+    WorkoutsComponent
   ]
 })
-export class MealsModule {}
+export class WorkoutsModule {}

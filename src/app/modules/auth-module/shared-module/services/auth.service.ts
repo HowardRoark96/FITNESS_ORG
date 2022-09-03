@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
-import { Store } from '../../../store';
+import { Store } from '../../../../store';
 import { tap } from 'rxjs';
 
 export interface User {
