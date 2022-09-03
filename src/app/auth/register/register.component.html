@@ -5,4 +5,10 @@
   <button type="submit">Create account</button>
 
   <a routerLink="/auth/login">Already have an account?</a>
+
+  <div
+    *ngIf="error"
+    class="error">
+    {{ error }}
+  </div>
 </app-auth-form>

@@ -6,5 +6,11 @@
     <button type="submit">Login</button>
 
     <a routerLink="/auth/register">Not registered?</a>
+
+    <div
+      *ngIf="error"
+      class="error">
+      {{ error }}
+    </div>
   </app-auth-form>
 </div>
