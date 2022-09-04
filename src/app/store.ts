@@ -1,13 +1,16 @@
 import { BehaviorSubject, distinctUntilChanged, map, Observable } from 'rxjs';
 import { User } from './modules/auth-module/shared-module/services/auth.service';
+import { Meal } from './modules/health-module/shared-molude/services/meals.service';
 
 export interface State {
   user: User | null,
+  meals: Meal[] | null,
   [key: string]: any
 }
 
 const state: State = {
   user: null,
+  meals: null
 };
 
 export class Store {

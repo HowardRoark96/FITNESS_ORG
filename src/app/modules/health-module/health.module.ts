@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { HealthRoutingModule } from './health-routing.module';
+import { SharedModule } from './shared-molude/shared.module';
 
 @NgModule({
   imports: [
-    HealthRoutingModule
+    HealthRoutingModule,
+    SharedModule.forRoot()
   ],
   declarations: []
 })

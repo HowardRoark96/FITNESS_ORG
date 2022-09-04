@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { Store } from './store';
 import { HeaderComponent } from './components/header/header.component';
 import { NavComponent } from './components/nav/nav.component';
+import { HealthModule } from './modules/health-module/health.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NavComponent } from './components/nav/nav.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AuthModule
+    AuthModule,
+    HealthModule
   ],
   providers: [
     Store
