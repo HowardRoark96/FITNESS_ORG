@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
-import { Meal } from '../../services/meals.service';
 
 @Component({
   selector: 'app-list-item',
@@ -16,8 +15,8 @@ export class ListItemComponent {
 
   constructor() {}
 
-  getRoute(meal: Meal) {
-    return [`../meals/`, meal.$key];
+  getRoute(item: any) {
+    return [`../${item.ingredients ? 'meals' : 'workouts'}/`, item.$key];
   }
 
   removeItem() {
