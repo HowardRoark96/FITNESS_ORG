@@ -86,6 +86,7 @@
         </div>
 
         <button
+          *ngIf="!toggled"
           class="button button--delete"
           type="button"
           (click)="toggle()">

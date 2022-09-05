@@ -30,6 +30,7 @@
   </div>
 
   <button
+    *ngIf="!toggled"
     class="trash"
     type="button"
     (click)="toggle()">
