@@ -4,11 +4,11 @@
 }
 
 .app-nav {
-  background: #8022b0;
+  background: #ff3f62ff;
   text-align: center;
 
   a {
-    color: rgba(255,255,255,.6);
+    color: #fff;
     padding: 15px 0;
     display: inline-block;
     min-width: 150px;
@@ -19,8 +19,8 @@
 
     &:hover,
     &.active {
-      color: #fff;
-      border-bottom-color: #fff;
+      color: #00ccb3ff;
+      border-bottom-color: #00ccb3ff;
     }
   }
 }

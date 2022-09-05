@@ -60,12 +60,12 @@
 
 .confirm {
   color: #fff;
-  background: #d73a49;
+  background: #ff3f62ff;
   border-radius: 3px;
   transition: all .2s ease-in-out;
 
   &:hover {
-    background: darken(#d73a49, 3%);
+    background: darken(#ff3f62ff, 3%);
   }
 }
 

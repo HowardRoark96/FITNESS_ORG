@@ -1,0 +1,14 @@
+<div class="schedule-controls">
+
+  <button
+    type="button"
+    (click)="onMoveDate(offset - 1)">
+    <img src="/assets/chevron-left.svg" alt="Previous day">
+  </button>
+  <p>{{ selectedDate | date:'MMMM d, y' }}</p>
+  <button
+    type="button"
+    (click)="onMoveDate(offset + 1)">
+    <img src="/assets/chevron-right.svg" alt="Next day">
+  </button>
+</div>
