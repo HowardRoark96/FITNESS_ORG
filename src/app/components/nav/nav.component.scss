@@ -22,11 +22,24 @@
       color: #00ccb3ff;
       border-bottom-color: #00ccb3ff;
     }
+
+    @media (max-width: 450px) {
+      flex: 1;
+      min-width: 100px;
+      padding: 10px 0;
+      font-size: 16px;
+    }
   }
 }
 
 .wrapper {
+  display: flex;
+  justify-content: center;
   max-width: 800px;
   width: 96%;
   margin: 0 auto;
+
+  @media (max-width: 450px) {
+    width: 100%;
+  }
 }

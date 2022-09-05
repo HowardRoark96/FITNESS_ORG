@@ -9,7 +9,7 @@
       class="btn__add"
       [routerLink]="['../meals/new']">
       <img src="assets/add-white.svg" alt="Add new meal">
-      New meal
+      <span>New meal</span>
     </a>
   </div>
 
@@ -18,7 +18,7 @@
       *ngIf="!meals.length"
       class="message">
       <img src="assets/face.svg" alt="No meals, add a new meal to start">
-      No meals, add a new meal to start
+      No meals, add a new meal
     </div>
 
     <div *ngFor="let meal of meals; let i = index">

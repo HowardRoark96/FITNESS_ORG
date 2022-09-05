@@ -40,5 +40,17 @@
       text-transform: uppercase;
       letter-spacing: 3px;
     }
+
+    @media (max-width: 450px) {
+      padding: 15px;
+
+      img {
+        margin: 0;
+      }
+
+      p {
+        display: none;
+      }
+    }
   }
 }

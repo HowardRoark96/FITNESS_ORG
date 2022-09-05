@@ -40,11 +40,19 @@
     padding: 30px;
     flex-direction: column;
     border-bottom: 1px solid #d1deeb;
+
+    @media (max-width: 450px) {
+      padding: 15px;
+    }
   }
 
   &__food {
     padding: 30px;
     border-bottom: 1px solid #d1deeb;
+
+    @media (max-width: 450px) {
+      padding: 15px;
+    }
   }
 
   &__subtitle {
@@ -93,6 +101,18 @@
       width: 20px;
       margin: 0 6px 0 0;
     }
+
+    @media (max-width: 450px) {
+      padding: 6px;
+
+      span {
+        display: none;
+      }
+
+      img {
+        margin: 0;
+      }
+    }
   }
 
   &__remove {
@@ -120,6 +140,10 @@
     display: flex;
     justify-content: space-between;
     padding: 30px;
+
+    @media (max-width: 450px) {
+      padding: 15px;
+    }
   }
 
   h1 {
@@ -202,7 +226,6 @@
     &--delete {
       margin-left: 5px;
       background: #ff3f62ff;
-      align-self: flex-start;
 
       &:hover {
         background: darken(#ff3f62ff, 5%);

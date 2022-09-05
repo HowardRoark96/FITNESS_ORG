@@ -40,11 +40,19 @@
     padding: 30px;
     flex-direction: column;
     border-bottom: 1px solid #d1deeb;
+
+    @media (max-width: 450px) {
+      padding: 15px;
+    }
   }
 
   &__details {
     padding: 30px;
     border-bottom: 1px solid #d1deeb;
+
+    @media (max-width: 450px) {
+      padding: 15px;
+    }
   }
 
   &__subtitle {
@@ -79,6 +87,10 @@
     display: flex;
     justify-content: space-between;
     padding: 30px;
+
+    @media (max-width: 450px) {
+      padding: 15px;
+    }
   }
 
   h1 {
@@ -97,6 +109,10 @@
   h3 {
     font-size: 18px;
     font-weight: 600;
+
+    @media (max-width: 450px) {
+      font-size: 17px;
+    }
   }
 
   label {
@@ -123,6 +139,10 @@
       &:last-child {
         margin: 0 0 10px;
       }
+    }
+
+    @media (max-width: 450px) {
+      padding: 15px;
     }
   }
 
@@ -161,6 +181,13 @@
     transition: all 0.2s ease-in-out;
     display: inline-block;
 
+    @media (max-width: 450px) {
+      span {
+        display: none;
+      }
+    }
+
+
     &:hover {
       background: darken(#00ccb3ff, 5%);
     }
@@ -181,7 +208,6 @@
 
     &--delete {
       background: #ff3f62ff;
-      align-self: flex-start;
 
       &:hover {
         background: darken(#ff3f62ff, 5%);
